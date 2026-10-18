@@ -1,0 +1,18 @@
+{
+  "name": "seo-perception",
+  "displayName": "SEO Perception",
+  "version": "1.0.0",
+  "description": "Search Console, crawl, and your open SEO to-dos, read-only inside Cursor.",
+  "author": {
+    "name": "Larsik Corp (Lars Koudal)",
+    "url": "https://seoperception.com"
+  },
+  "homepage": "https://seoperception.com/mcp-integration",
+  "repository": "https://github.com/YOUR-USERNAME/seoperception-mcp",
+  "license": "MIT",
+  "logo": "assets/logo.png",
+  "keywords": ["seo", "mcp", "search-console", "gsc", "crawl", "content-decay", "cannibalization", "internal-links"],
+  "category": "integrations",
+  "tags": ["seo", "mcp", "analytics", "search-console"],
+  "mcpServers": "./mcp.json"
+}
