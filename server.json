@@ -1,0 +1,11 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.seoperception/mcp",
+  "title": "SEO Perception",
+  "description": "Search Console, crawl and SEO to-dos, read-only inside Cursor and Claude.",
+  "version": "1.0.0",
+  "websiteUrl": "https://seoperception.com/mcp-integration",
+  "remotes": [
+    { "type": "streamable-http", "url": "https://seoperception.com/mcp" }
+  ]
+}
