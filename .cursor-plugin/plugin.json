@@ -8,7 +8,7 @@
     "url": "https://seoperception.com"
   },
   "homepage": "https://seoperception.com/mcp-integration",
-  "repository": "https://github.com/YOUR-USERNAME/seoperception-mcp",
+  "repository": "https://github.com/lkoudal/seoperception-mcp",
   "license": "MIT",
   "logo": "assets/logo.png",
   "keywords": ["seo", "mcp", "search-console", "gsc", "crawl", "content-decay", "cannibalization", "internal-links"],
