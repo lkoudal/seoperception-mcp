@@ -8,7 +8,7 @@ SEO Perception MCP is a **hosted, remote** server. There is nothing to clone, bu
 - URL: `https://seoperception.com/mcp`
 - Transport: Streamable HTTP (`"type": "streamableHttp"`)
 - Auth: OAuth 2.1 (browser sign-in, dynamic client registration, PKCE). A personal access token sent as `Authorization: Bearer <token>` also works.
-- All 9 tools are read-only.
+- Ten tools. Nine read stored Search Console, crawl, and Possibilities. `seoperception_update_possibilities` can mark existing to-dos done or ignored, and only when the connection has the `mcp:possibilities` scope.
 
 ## Steps
 
@@ -54,6 +54,6 @@ Ask the user to sign in at https://seoperception.com, open **Account > MCP**, an
 ## Notes for the agent
 
 - Always set `"type": "streamableHttp"`. Without it Cline uses the legacy SSE transport, which this server does not use.
-- 403 `paid_plan_required` means the user's SEO Perception plan does not include MCP. SEO Perception has a free tier; MCP is currently on the Starter plan and above (https://seoperception.com/pricing).
+- 403 `paid_plan_required` means the account is past the trial and has no plan that includes MCP. A 7-day Starter trial includes MCP. After that, Starter, Pro, Business, or Enterprise is required (https://seoperception.com/pricing).
 - Empty results usually mean the site has no stored data yet.
 - Docs: https://seoperception.com/mcp-integration

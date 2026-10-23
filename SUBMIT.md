@@ -7,8 +7,8 @@ Internal checklist for Lars. Safe to keep in the public repo (no secrets), or de
 Reusable text:
 
 - Name: `SEO Perception`
-- One-liner: `Search Console, crawl, and your open SEO to-dos, read-only inside Cursor and Claude.`
-- Short description: `SEO Perception stores weekly Search Console facts, the site crawl, and Possibilities (a prioritized fix list per URL). Nine read-only tools let your AI assistant read that workspace and draft the next edit. It never calls Google live and never writes. Connect with OAuth 2.1 or a personal access token. SEO Perception has a free tier; MCP is currently on the Starter plan and above.`
+- One-liner: `Search Console, the crawl, and your SEO to-dos — inside Cursor and Claude.`
+- Short description: `SEO Perception stores weekly Search Console facts, the site crawl, and Possibilities (a prioritized to-do list per URL). MCP lets Cursor and Claude read that workspace and draft the next edit. Connect with OAuth or a personal access token. With the mcp:possibilities scope, an agent can mark those to-dos done or ignored. Tools never call Google. Start with a 7-day Starter trial (MCP included).`
 - Endpoint: `https://seoperception.com/mcp` (streamable HTTP)
 - Docs: `https://seoperception.com/mcp-integration`
 - Registry name: `com.seoperception/mcp`
@@ -17,8 +17,8 @@ Reusable text:
 
 ## 0. Before the first push (fix the TODOs)
 
-- [ ] `glama.json`: replace `TODO-LARS-GITHUB-USERNAME` with your GitHub username.
-- [ ] `.cursor-plugin/plugin.json`: replace `TODO-LARS-GITHUB-USERNAME` in `repository` with the real owner (username or org).
+- [x] `glama.json`: maintainers is `lkoudal`.
+- [x] `.cursor-plugin/plugin.json`: repository is `https://github.com/lkoudal/seoperception-mcp`.
 - [ ] Check: `grep -rn TODO .` returns nothing.
 
 ## 1. Glama (repo listing + ownership)
@@ -48,7 +48,7 @@ Reusable text:
   - GitHub Repository URL: `<REPO_URL>`
   - Logo Image: drag in `assets/logo-400.png` (400x400 PNG)
   - Tick both testing boxes only after you have actually tested: in Cline, ask "Install the MCP server from `<REPO_URL>`" and confirm it adds the remote entry from `llms-install.md` and signs in.
-  - Additional Information: `Hosted remote server (streamable HTTP, OAuth 2.1 with dynamic client registration). Nothing to install locally; llms-install.md tells Cline to add a remote entry only. 9 read-only tools over stored Search Console, crawl and prioritized SEO fix data for the user's own sites. Free tier app; MCP on the Starter plan. Docs: https://seoperception.com/mcp-integration`
+  - Additional Information: `Hosted remote server (streamable HTTP, OAuth 2.1 with dynamic client registration, or a personal access token). Nothing to install locally; llms-install.md tells Cline to add a remote entry only. Ten tools over stored Search Console, crawl, and Possibilities. Closing a to-do needs the mcp:possibilities scope. 7-day Starter trial includes MCP. Docs: https://seoperception.com/mcp-integration`
 - Needs your GitHub account: yes (the issue is opened by you).
 
 ## 5. MCP Market
@@ -62,7 +62,7 @@ Reusable text:
 
 - Free route: open an issue at https://github.com/chatmcp/mcpso/issues/new
   - Title: `Submit Remote MCP Server: SEO Perception`
-  - Body: Name, endpoint `https://seoperception.com/mcp` (streamable HTTP), repository `<REPO_URL>`, website `https://seoperception.com/mcp-integration`, the short description above, auth `OAuth 2.1 (browser consent) or a personal access token sent as Authorization: Bearer <token>`, tools `list sites, site overview, search queries, opportunities, page diagnostics, content gaps, content decay, cannibalization, internal link suggestions`, category `SEO / Marketing / Analytics`.
+  - Body: Name, endpoint `https://seoperception.com/mcp` (streamable HTTP), repository `<REPO_URL>`, website `https://seoperception.com/mcp-integration`, the short description above, auth `OAuth 2.1 (browser consent) or a personal access token sent as Authorization: Bearer <token>`, tools `list sites, site overview, search queries, opportunities, close possibilities (optional scope), page diagnostics, content gaps, content decay, cannibalization, internal link suggestions`, category `SEO / Marketing / Analytics`.
 - Paid route: https://mcp.so/submit, Remote Server tab, Repository URL `<REPO_URL>`, Name `SEO Perception` ($39 one-time on 18 Oct 2026).
 - Needs your GitHub account: yes for the free issue.
 
@@ -90,8 +90,8 @@ Reusable text:
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.seoperception/mcp",
   "title": "SEO Perception",
-  "description": "Search Console, crawl and SEO to-dos, read-only inside Cursor and Claude.",
-  "version": "1.0.1",
+  "description": "Search Console, the crawl, and your SEO to-dos inside Cursor and Claude. Connect with OAuth or a personal token. Optionally mark to-dos done or ignored.",
+  "version": "1.1.0",
   "websiteUrl": "https://seoperception.com/mcp-integration",
   "repository": { "url": "https://github.com/YOUR-GITHUB-USERNAME/seoperception-mcp", "source": "github" },
   "remotes": [

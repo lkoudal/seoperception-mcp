@@ -11,7 +11,7 @@ meta:
     - remote
 about:
   title: SEO Perception
-  description: Read stored Search Console data, site crawl, and prioritized SEO fixes per URL, read-only
+  description: Stored Search Console, crawl, and SEO to-dos. OAuth or a personal token. Optionally mark to-dos done or ignored.
   icon: https://www.google.com/s2/favicons?domain=seoperception.com&sz=64
 remote:
   transport_type: streamable-http
