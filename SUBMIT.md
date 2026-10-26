@@ -83,24 +83,24 @@ Reusable text:
 
 ## 9. Optional: link the repo from the Official MCP Registry
 
-`com.seoperception/mcp` 1.0.0 is already published. If you want the registry entry to show this repo, replace `server.json` with:
+`com.seoperception/mcp` 2.1.0 is the latest registry version. `server.json` matches it:
 
 ```json
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.seoperception/mcp",
   "title": "SEO Perception",
-  "description": "Search Console, crawl, and SEO to-dos. OAuth or a personal token. Optional close.",
-  "version": "1.1.0",
+  "description": "Search Console, crawl, and SEO to-dos in Cursor and Claude. OAuth or token; close to-dos optionally.",
+  "version": "2.1.0",
   "websiteUrl": "https://seoperception.com/mcp-integration",
-  "repository": { "url": "https://github.com/YOUR-GITHUB-USERNAME/seoperception-mcp", "source": "github" },
+  "repository": { "url": "https://github.com/lkoudal/seoperception-mcp", "source": "github" },
   "remotes": [
     { "type": "streamable-http", "url": "https://seoperception.com/mcp" }
   ]
 }
 ```
 
-(the `repository` line is new and `version` is bumped to `1.0.1`), then run `mcp-publisher publish` again with the same domain key. Not required for any directory above.
+A new publish needs a higher version than 2.1.0. The registry rejects a description longer than 100 characters.
 
 ## Do not
 
