@@ -90,7 +90,7 @@ Reusable text:
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.seoperception/mcp",
   "title": "SEO Perception",
-  "description": "Search Console, the crawl, and your SEO to-dos inside Cursor and Claude. Connect with OAuth or a personal token. Optionally mark to-dos done or ignored.",
+  "description": "Search Console, crawl, and SEO to-dos. OAuth or a personal token. Optional close.",
   "version": "1.1.0",
   "websiteUrl": "https://seoperception.com/mcp-integration",
   "repository": { "url": "https://github.com/YOUR-GITHUB-USERNAME/seoperception-mcp", "source": "github" },
