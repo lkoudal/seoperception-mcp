@@ -8,7 +8,7 @@ Reusable text:
 
 - Name: `SEO Perception`
 - One-liner: `Search Console, the crawl, and your SEO to-dos — inside Cursor and Claude.`
-- Short description: `SEO Perception stores weekly Search Console facts, the site crawl, and Possibilities (a prioritized to-do list per URL). MCP lets Cursor and Claude read that workspace and draft the next edit. Connect with OAuth or a personal access token. With the mcp:possibilities scope, an agent can mark those to-dos done or ignored. Tools never call Google. Start with a 7-day Starter trial (MCP included).`
+- Short description: `SEO Perception stores weekly Search Console facts, the site crawl, and Possibilities (a prioritized to-do list per URL). MCP lets Cursor and Claude read that workspace and draft the next edit. Connect with OAuth or a personal access token. With the mcp:possibilities scope, an agent can mark those to-dos done or ignored. Tools never call Google. Start with a 7-day Pro trial (MCP included). After the trial, OAuth, personal tokens, and the MCP endpoint need an active Starter, Pro, Business, or Enterprise plan.`
 - Endpoint: `https://seoperception.com/mcp` (streamable HTTP)
 - Docs: `https://seoperception.com/mcp-integration`
 - Registry name: `com.seoperception/mcp`
@@ -48,7 +48,7 @@ Reusable text:
   - GitHub Repository URL: `<REPO_URL>`
   - Logo Image: drag in `assets/logo-400.png` (400x400 PNG)
   - Tick both testing boxes only after you have actually tested: in Cline, ask "Install the MCP server from `<REPO_URL>`" and confirm it adds the remote entry from `llms-install.md` and signs in.
-  - Additional Information: `Hosted remote server (streamable HTTP, OAuth 2.1 with dynamic client registration, or a personal access token). Nothing to install locally; llms-install.md tells Cline to add a remote entry only. Ten tools over stored Search Console, crawl, and Possibilities. Closing a to-do needs the mcp:possibilities scope. 7-day Starter trial includes MCP. Docs: https://seoperception.com/mcp-integration`
+  - Additional Information: `Hosted remote server (streamable HTTP, OAuth 2.1 with dynamic client registration, or a personal access token). Nothing to install locally; llms-install.md tells Cline to add a remote entry only. Ten tools over stored Search Console, crawl, and Possibilities. Closing a to-do needs the mcp:possibilities scope. 7-day Pro trial includes MCP. Docs: https://seoperception.com/mcp-integration`
 - Needs your GitHub account: yes (the issue is opened by you).
 
 ## 5. MCP Market

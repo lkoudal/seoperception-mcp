@@ -54,6 +54,6 @@ Ask the user to sign in at https://seoperception.com, open **Account > MCP**, an
 ## Notes for the agent
 
 - Always set `"type": "streamableHttp"`. Without it Cline uses the legacy SSE transport, which this server does not use.
-- 403 `paid_plan_required` means the account is past the trial and has no plan that includes MCP. A 7-day Starter trial includes MCP. After that, Starter, Pro, Business, or Enterprise is required (https://seoperception.com/pricing).
+- 403 `paid_plan_required` means the account is past the trial and has no plan that includes MCP. Start with a 7-day Pro trial (MCP included). After the trial, OAuth, personal tokens, and the MCP endpoint need an active Starter, Pro, Business, or Enterprise plan (https://seoperception.com/pricing).
 - Empty results usually mean the site has no stored data yet.
 - Docs: https://seoperception.com/mcp-integration

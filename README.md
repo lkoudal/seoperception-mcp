@@ -34,7 +34,7 @@ This repository lists the **hosted** SEO Perception MCP server in MCP directorie
 
 ## Plan
 
-Start with a 7-day Starter trial (MCP included). After the trial, OAuth, personal tokens, and the MCP endpoint need an active Starter, Pro, Business, or Enterprise plan. See [pricing](https://seoperception.com/pricing).
+Start with a 7-day Pro trial (MCP included). After the trial, OAuth, personal tokens, and the MCP endpoint need an active Starter, Pro, Business, or Enterprise plan. See [pricing](https://seoperception.com/pricing).
 
 ## Tools
 
