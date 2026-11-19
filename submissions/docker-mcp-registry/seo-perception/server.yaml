@@ -11,7 +11,7 @@ meta:
     - remote
 about:
   title: SEO Perception
-  description: Stored Search Console, crawl, and SEO to-dos. OAuth or a personal token. Optionally mark to-dos done or ignored.
+  description: Stored Search Console, crawl, and SEO to-dos. OAuth or a personal token. Optionally mark to-dos done or ignored. 7-day Pro trial, then $29/month. MCP is not on the Free plan.
   icon: https://www.google.com/s2/favicons?domain=seoperception.com&sz=64
 remote:
   transport_type: streamable-http

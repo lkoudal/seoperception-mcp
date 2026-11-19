@@ -5,7 +5,7 @@
 <h1 align="center">SEO Perception MCP</h1>
 
 <p align="center">
-  Search Console, the crawl, and your SEO to-dos — inside Cursor, Claude, VS Code, and other MCP clients.
+  Search Console, the crawl, and your SEO to-dos, inside Cursor, Claude, VS Code, and other MCP clients.
 </p>
 
 <p align="center">
@@ -34,7 +34,7 @@ This repository lists the **hosted** SEO Perception MCP server in MCP directorie
 
 ## Plan
 
-Start with a 7-day Pro trial (MCP included). After the trial, OAuth, personal tokens, and the MCP endpoint need an active Starter, Pro, Business, or Enterprise plan. See [pricing](https://seoperception.com/pricing).
+Start with a 7-day Pro trial, then $29/month. MCP is not on the Free plan. See [pricing](https://seoperception.com/pricing).
 
 ## Tools
 
