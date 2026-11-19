@@ -7,8 +7,8 @@ Internal checklist for Lars. Safe to keep in the public repo (no secrets), or de
 Reusable text:
 
 - Name: `SEO Perception`
-- One-liner: `Search Console, the crawl, and your SEO to-dos — inside Cursor and Claude.`
-- Short description: `SEO Perception stores weekly Search Console facts, the site crawl, and Possibilities (a prioritized to-do list per URL). MCP lets Cursor and Claude read that workspace and draft the next edit. Connect with OAuth or a personal access token. With the mcp:possibilities scope, an agent can mark those to-dos done or ignored. Tools never call Google. Start with a 7-day Starter trial (MCP included).`
+- One-liner: `Search Console, the crawl, and your SEO to-dos, inside Cursor and Claude.`
+- Short description: `SEO Perception stores weekly Search Console facts, the site crawl, and Possibilities (a prioritized to-do list per URL). MCP lets Cursor and Claude read that workspace and draft the next edit. Connect with OAuth or a personal access token. With the mcp:possibilities scope, an agent can mark those to-dos done or ignored. Tools never call Google. 7-day Pro trial, then $29/month. MCP is not on the Free plan.`
 - Endpoint: `https://seoperception.com/mcp` (streamable HTTP)
 - Docs: `https://seoperception.com/mcp-integration`
 - Registry name: `com.seoperception/mcp`
@@ -48,7 +48,7 @@ Reusable text:
   - GitHub Repository URL: `<REPO_URL>`
   - Logo Image: drag in `assets/logo-400.png` (400x400 PNG)
   - Tick both testing boxes only after you have actually tested: in Cline, ask "Install the MCP server from `<REPO_URL>`" and confirm it adds the remote entry from `llms-install.md` and signs in.
-  - Additional Information: `Hosted remote server (streamable HTTP, OAuth 2.1 with dynamic client registration, or a personal access token). Nothing to install locally; llms-install.md tells Cline to add a remote entry only. Ten tools over stored Search Console, crawl, and Possibilities. Closing a to-do needs the mcp:possibilities scope. 7-day Starter trial includes MCP. Docs: https://seoperception.com/mcp-integration`
+  - Additional Information: `Hosted remote server (streamable HTTP, OAuth 2.1 with dynamic client registration, or a personal access token). Nothing to install locally; llms-install.md tells Cline to add a remote entry only. Ten tools over stored Search Console, crawl, and Possibilities. Closing a to-do needs the mcp:possibilities scope. 7-day Pro trial, then $29/month. MCP is not on the Free plan. Docs: https://seoperception.com/mcp-integration`
 - Needs your GitHub account: yes (the issue is opened by you).
 
 ## 5. MCP Market
@@ -83,15 +83,15 @@ Reusable text:
 
 ## 9. Optional: link the repo from the Official MCP Registry
 
-`com.seoperception/mcp` 2.1.0 is the latest registry version. `server.json` matches it:
+`server.json` is 2.1.1. The published registry entry is still 2.1.0 until the next publish. A new publish must use a higher version than whatever is already live. `server.json` matches this repo:
 
 ```json
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.seoperception/mcp",
   "title": "SEO Perception",
-  "description": "Search Console, crawl, and SEO to-dos in Cursor and Claude. OAuth or token; close to-dos optionally.",
-  "version": "2.1.0",
+  "description": "SEO to-dos in Cursor. 7-day Pro trial, then $29/month. Not on the Free plan.",
+  "version": "2.1.1",
   "websiteUrl": "https://seoperception.com/mcp-integration",
   "repository": { "url": "https://github.com/lkoudal/seoperception-mcp", "source": "github" },
   "remotes": [
@@ -100,7 +100,7 @@ Reusable text:
 }
 ```
 
-A new publish needs a higher version than 2.1.0. The registry rejects a description longer than 100 characters.
+A new publish needs a higher version than the one already live. `server.json` is 2.1.1, which is higher than the published 2.1.0. The registry rejects a description longer than 100 characters.
 
 ## Do not
 

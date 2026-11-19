@@ -3,7 +3,7 @@
 ## 1.1.0 (2026-10-22)
 
 - Listing copy now matches the live server: OAuth or a personal access token, ten tools, and an optional `mcp:possibilities` scope that can mark existing Possibilities done or ignored.
-- Trial line is a 7-day Starter trial with MCP included.
+- Trial line is a 7-day Pro trial, then $29/month. MCP is not on the Free plan.
 
 ## 1.0.0 (2026-10-18)
 

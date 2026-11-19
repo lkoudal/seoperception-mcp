@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.seoperception/mcp",
   "title": "SEO Perception",
-  "description": "Search Console, crawl, and SEO to-dos in Cursor and Claude. OAuth or token; close to-dos optionally.",
-  "version": "2.1.0",
+  "description": "SEO to-dos in Cursor. 7-day Pro trial, then $29/month. Not on the Free plan.",
+  "version": "2.1.1",
   "websiteUrl": "https://seoperception.com/mcp-integration",
   "repository": {
     "url": "https://github.com/lkoudal/seoperception-mcp",
